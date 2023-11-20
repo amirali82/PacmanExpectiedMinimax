@@ -14,13 +14,6 @@ dx = [0, 0,  0,  1, -1]
 dy = [0, 1, -1,  0,  0]
 CHANCE = [0.12, 0.22, 0.22, 0.22, 0.22]
 
-prev_numberOfDots = N * M - NUMBER_OF_WALLS - 1
-
-class moveSeq:
-    class move:
-        pass
-    seq = []
-
 def isPacmanAlive(state):
     pacPos = state["PacmanPos"]
 

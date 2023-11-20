@@ -1,1314 +1,2025 @@
-.........#
-##.#......
-..##..#.#.
-.G.P##.#.#
-.#.G##....
+.#...#.##.
+..#...#...
+#....#...#
+..###..P..
+#.GG.#...#
 Dots left: 34
 State Number: 0
 ExpectedUtility Of Move: -34
 ---------------------
-.........#
-##.#......
-.G##..#.#.
-..P ##.#.#
-.#.G##....
+.#.G.#.##.
+..#...#...
+#....#...#
+..###.P ..
+#....#...#
 Dots left: 33
 State Number: 1
 ExpectedUtility Of Move: -33
 ---------------------
-...G.....#
-##.#......
-.G##..#.#.
-.. P##.#.#
-.#..##....
-Dots left: 33
+.#...#.##.
+..#G..#...
+#....#...#
+..###.  ..
+#.G..#P..#
+Dots left: 32
 State Number: 2
-ExpectedUtility Of Move: -33
----------------------
-....G....#
-##.#......
-G.##..#.#.
-..P ##.#.#
-.#..##....
-Dots left: 33
-State Number: 3
-ExpectedUtility Of Move: -33
----------------------
-.....G...#
-##.#......
-..##..#.#.
-GP  ##.#.#
-.#..##....
-Dots left: 32
-State Number: 4
 ExpectedUtility Of Move: -32
 ---------------------
-.........#
-##.#.G....
-..##..#.#.
-.GP ##.#.#
-.#..##....
-Dots left: 32
-State Number: 5
-ExpectedUtility Of Move: -32
----------------------
-.........#
-##.#......
-..##.G#.#.
-.G  ##.#.#
-.#P.##....
+.#...#.##.
+..#G..#...
+#....#...#
+..###.  ..
+#G...# P.#
 Dots left: 31
-State Number: 6
+State Number: 3
 ExpectedUtility Of Move: -31
 ---------------------
-..P......#
-##.#......
-..##.G#.#.
-.G  ##.#.#
-.# .##....
+.#.G.#.##.
+..#...#...
+#....#...#
+..###.  ..
+#.G..#  P#
 Dots left: 30
-State Number: 7
+State Number: 4
 ExpectedUtility Of Move: -30
 ---------------------
-.. P.....#
-##.#......
-..##.G#.#.
-. G ##.#.#
-.# .##....
+.#G..#.##.
+..#...#...
+#....#...#
+..###.  P.
+#.G..#   #
 Dots left: 29
-State Number: 8
+State Number: 5
 ExpectedUtility Of Move: -29
 ---------------------
-..  .....#
-##.#......
-..##G.#.#.
-.   ##.#.#
-.#GP##....
+.#...#.##.
+..#...#...
+#....#...#
+..###.   P
+#.G..#   #
 Dots left: 28
-State Number: 9
+State Number: 6
 ExpectedUtility Of Move: -28
 ---------------------
-.. P.....#
-##.#......
-..##G.#.#.
-. G ##.#.#
-.#  ##....
-Dots left: 28
-State Number: 10
-ExpectedUtility Of Move: -28
----------------------
-..  P....#
-##.#G.....
-..##..#.#.
-.  G##.#.#
-.#  ##....
+.#G..#.##.
+..#...#...
+#....#...#
+P.###.    
+#....#   #
 Dots left: 27
-State Number: 11
+State Number: 7
 ExpectedUtility Of Move: -27
 ---------------------
-..  GP...#
-##.#......
-..##..#.#.
-.   ##.#.#
-.# G##....
+.#.G.#.##.
+..#...#...
+#....#...#
+ P###.    
+#....#   #
 Dots left: 26
-State Number: 12
+State Number: 8
 ExpectedUtility Of Move: -26
 ---------------------
-..  G P..#
-##.#......
-..##..#.#.
-.   ##.#.#
-.#G ##....
+.#G..#.##.
+..#...#...
+#P...#...#
+  ###.    
+#..G.#   #
 Dots left: 25
-State Number: 13
+State Number: 9
 ExpectedUtility Of Move: -25
 ---------------------
-.. G   ..#
-##.#......
-..##..#.#.
-.   ##.#.#
-.# G##P...
+.#...#.##.
+..#...#...
+# P..#...#
+  ###.    
+#.G..#   #
 Dots left: 24
-State Number: 14
+State Number: 10
 ExpectedUtility Of Move: -24
 ---------------------
-..  G  ..#
-##.#......
-..##..#.#.
-.   ##.#.#
-.# G## P..
+.#...#.##.
+..#...#...
+#  P.#...#
+  ###.    
+#G...#   #
 Dots left: 23
-State Number: 15
+State Number: 11
 ExpectedUtility Of Move: -23
 ---------------------
-..  G  P.#
-##.#......
-..##..#.#.
-.  G##.#.#
-.#  ##  ..
+.#...#.##.
+..#P..#...
+#   .#...#
+ G###.    
+#.G..#   #
 Dots left: 22
-State Number: 16
+State Number: 12
 ExpectedUtility Of Move: -22
 ---------------------
-..      .#
-##.#G..P..
-..##..#.#.
-.  G##.#.#
-.#  ##  ..
+.#.P.#.##.
+..# ..#...
+#   .#...#
+  ###.    
+#G...#   #
 Dots left: 21
-State Number: 17
+State Number: 13
 ExpectedUtility Of Move: -21
 ---------------------
-..      .#
-##.#... P.
-..##G.#.#.
-.  G##.#.#
-.#  ##  ..
+.#. P#.##.
+..# ..#...
+#   .#...#
+  ###.    
+#.G..#   #
 Dots left: 20
-State Number: 18
+State Number: 14
 ExpectedUtility Of Move: -20
 ---------------------
-..      P#
-##.#...  .
-..##.G#.#.
-.   ##.#.#
-.# G##  ..
+.#.  #.##.
+..# P.#...
+#   .#...#
+  ###.    
+#.GG.#   #
 Dots left: 19
-State Number: 19
+State Number: 15
 ExpectedUtility Of Move: -19
 ---------------------
-..       #
-##.#...  .
-..##.G#.#.
-.  G##.#.#
-.#  ##  P.
+.#.G #.##.
+..#  .#...
+#   P#...#
+  ###.    
+#..G.#   #
 Dots left: 18
-State Number: 20
+State Number: 16
 ExpectedUtility Of Move: -18
 ---------------------
-..       #
-##.#...  .
-..##.G#.#.
-. G ##.#.#
-.#  ##   P
+.#.G #.##.
+..# P.#...
+#    #...#
+  ###.    
+#...G#   #
+Dots left: 18
+State Number: 17
+ExpectedUtility Of Move: -18
+---------------------
+.#.  #.##.
+..#  .#...
+#   P#...#
+  ###.    
+#..G.#   #
+Dots left: 18
+State Number: 18
+ExpectedUtility Of Move: -18
+---------------------
+.#.G #.##.
+..# P.#...
+#    #...#
+  ###.    
+#...G#   #
+Dots left: 18
+State Number: 19
+ExpectedUtility Of Move: -18
+---------------------
+.#G  #.##.
+..#  P#...
+#    #...#
+  ###.    
+#...G#   #
+Dots left: 17
+State Number: 20
+ExpectedUtility Of Move: -17
+---------------------
+.#G G#.##.
+..# P #...
+#    #...#
+  ###.    
+#....#   #
 Dots left: 17
 State Number: 21
 ExpectedUtility Of Move: -17
 ---------------------
-..       #
-##.#.G.  .
-..##..#.#.
-. G ##.#.#
-P#  ##    
-Dots left: 16
+.#.  #.##.
+..# G #...
+#   P#...#
+  ###.    
+#.G..#   #
+Dots left: 17
 State Number: 22
+ExpectedUtility Of Move: -17
+---------------------
+.#G G#.##.
+..#   #...
+#  P #...#
+  ###.    
+#....#   #
+Dots left: 17
+State Number: 23
+ExpectedUtility Of Move: -17
+---------------------
+.#.  #.##.
+..#PG #...
+#    #...#
+  ###.    
+#.G..#   #
+Dots left: 17
+State Number: 24
+ExpectedUtility Of Move: -17
+---------------------
+.#.  #.##.
+..#G  #...
+#  P #...#
+  ###.    
+#..G.#   #
+Dots left: 17
+State Number: 25
+ExpectedUtility Of Move: -17
+---------------------
+.#.G #.##.
+..#   #...
+# P  #...#
+  ###.    
+#..G.#   #
+Dots left: 17
+State Number: 26
+ExpectedUtility Of Move: -17
+---------------------
+.#G  #.##.
+..#   #...
+#P   #...#
+  ###.    
+#.G..#   #
+Dots left: 17
+State Number: 27
+ExpectedUtility Of Move: -17
+---------------------
+.#G  #.##.
+.P#   #...
+#    #...#
+  ###.    
+#..G.#   #
+Dots left: 16
+State Number: 28
 ExpectedUtility Of Move: -16
 ---------------------
-P.       #
-##.#..G  .
-..##..#.#.
-.G  ##.#.#
- #  ##    
+.#G  #.##.
+P #   #...
+#    #...#
+  ###.    
+#.G..#   #
 Dots left: 15
-State Number: 23
+State Number: 29
 ExpectedUtility Of Move: -15
 ---------------------
- P       #
-##.#.G.  .
-.G##..#.#.
-.   ##.#.#
- #  ##    
+P#.G #.##.
+  #   #...
+#    #...#
+  ###.    
+#.G..#   #
 Dots left: 14
-State Number: 24
-ExpectedUtility Of Move: -14
----------------------
-  P  G   #
-##.#...  .
-..##..#.#.
-.G  ##.#.#
- #  ##    
-Dots left: 14
-State Number: 25
-ExpectedUtility Of Move: -14
----------------------
-    G    #
-##P#...  .
-..##..#.#.
-. G ##.#.#
- #  ##    
-Dots left: 13
-State Number: 26
-ExpectedUtility Of Move: -13
----------------------
-  PG     #
-## #...  .
-..##..#.#.
-.G  ##.#.#
- #  ##    
-Dots left: 13
-State Number: 27
-ExpectedUtility Of Move: -13
----------------------
- P       #
-## #...  .
-..##..#.#.
-. G ##.#.#
- # G##    
-Dots left: 13
-State Number: 28
-ExpectedUtility Of Move: -13
----------------------
-P        #
-## #...  .
-..##..#.#.
-.G  ##.#.#
- # G##    
-Dots left: 13
-State Number: 29
-ExpectedUtility Of Move: -13
----------------------
-   G     #
-## #...  .
-..##..#.#.
-.G  ##.#.#
-P#  ##    
-Dots left: 13
 State Number: 30
-ExpectedUtility Of Move: -13
+ExpectedUtility Of Move: -14
 ---------------------
-    G    #
-## #...  .
-.G##..#.#.
-.   ##.#.#
- #  ##   P
+ #.G #.##P
+  #   #...
+#    #...#
+  ###.    
+#G...#   #
 Dots left: 13
 State Number: 31
 ExpectedUtility Of Move: -13
 ---------------------
-     G   #
-## #...  .
-G.##..#.#.
-.   ##.#.#
- #  ##  P 
-Dots left: 13
+ #.G #.## 
+  #   #..P
+#    #...#
+  ###.    
+#.G..#   #
+Dots left: 12
 State Number: 32
-ExpectedUtility Of Move: -13
+ExpectedUtility Of Move: -12
 ---------------------
-    G    #
-## #...  .
-..##..#.#.
-G   ##.#P#
- #  ##    
-Dots left: 12
+ #G  #.## 
+  #   #.P 
+#    #...#
+  ###.    
+#....#   #
+Dots left: 11
 State Number: 33
-ExpectedUtility Of Move: -12
+ExpectedUtility Of Move: -11
 ---------------------
-   G     #
-## #...  .
-G.##..#.#.
-.   ##.# #
- #  ##  P 
-Dots left: 12
+ #G  #.## 
+  #   #P  
+#    #...#
+  ###.    
+#.G..#   #
+Dots left: 10
 State Number: 34
-ExpectedUtility Of Move: -12
+ExpectedUtility Of Move: -10
 ---------------------
-    G    #
-## #...  .
-..##..#.#.
-G   ##.# #
- #  ## P  
-Dots left: 12
+ #G  #.## 
+  #   #   
+#    #.P.#
+  ###.    
+#G...#   #
+Dots left: 9
 State Number: 35
-ExpectedUtility Of Move: -12
----------------------
-         #
-## #G..  .
-G.##..#.#.
-.   ##.# #
- #  ##P   
-Dots left: 12
-State Number: 36
-ExpectedUtility Of Move: -12
----------------------
-         #
-## #.G.  .
-.G##..#.#.
-.   ##P# #
- #  ##    
-Dots left: 11
-State Number: 37
-ExpectedUtility Of Move: -11
----------------------
-         #
-## #...  .
-..##.G#.#.
-.G  ## # #
- #  ##P   
-Dots left: 11
-State Number: 38
-ExpectedUtility Of Move: -11
----------------------
-      P  #
-## #...  .
-..##.G#.#.
-. G ## # #
- #  ##    
-Dots left: 11
-State Number: 39
-ExpectedUtility Of Move: -11
----------------------
-         #
-## #..P  .
-..##.G#.#.
-.G  ## # #
- #  ##    
-Dots left: 10
-State Number: 40
-ExpectedUtility Of Move: -10
----------------------
-         #
-## #.. P .
-.G##.G#.#.
-.   ## # #
- #  ##    
-Dots left: 10
-State Number: 41
-ExpectedUtility Of Move: -10
----------------------
-         #
-## #..   .
-..##.G#P#.
-.G  ## # #
- #  ##    
-Dots left: 9
-State Number: 42
 ExpectedUtility Of Move: -9
 ---------------------
-         #
-## #.. P .
-.G##.G# #.
-.   ## # #
- #  ##    
-Dots left: 9
-State Number: 43
-ExpectedUtility Of Move: -9
----------------------
-         #
-## #..  P.
-G.##G.# #.
-.   ## # #
- #  ##    
-Dots left: 9
-State Number: 44
-ExpectedUtility Of Move: -9
----------------------
-         #
-## #..   P
-..##G.# #.
-G   ## # #
- #  ##    
+ #G  #.## 
+  #   #   
+#    #. P#
+  ###.    
+#G...#   #
 Dots left: 8
-State Number: 45
+State Number: 36
 ExpectedUtility Of Move: -8
 ---------------------
-         #
-## #..    
-..##.G# #P
-.G  ## # #
- #  ##    
+ #.G #.## 
+  #   #   
+#    #.P #
+ G###.    
+#....#   #
+Dots left: 8
+State Number: 37
+ExpectedUtility Of Move: -8
+---------------------
+ #.G #.## 
+  #   #   
+#    #P  #
+  ###.    
+#G...#   #
 Dots left: 7
-State Number: 46
+State Number: 38
 ExpectedUtility Of Move: -7
 ---------------------
-         #
-## #.G    
-P.##..# # 
-.G  ## # #
- #  ##    
+ #. G#.## 
+  #   #   
+#    #   #
+ G###.P   
+#....#   #
+Dots left: 7
+State Number: 39
+ExpectedUtility Of Move: -7
+---------------------
+ #.  #.## 
+  # G #   
+#G   #   #
+  ###P    
+#....#   #
 Dots left: 6
+State Number: 40
+ExpectedUtility Of Move: -6
+---------------------
+ #.  #.## 
+  #   #   
+# G G#   #
+  ### P   
+#....#   #
+Dots left: 6
+State Number: 41
+ExpectedUtility Of Move: -6
+---------------------
+ #.  #.## 
+  #   #   
+# GG #   #
+  ###     
+#....#P  #
+Dots left: 6
+State Number: 42
+ExpectedUtility Of Move: -6
+---------------------
+ #.  #P## 
+  #G  #   
+#G   #   #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 43
+ExpectedUtility Of Move: -5
+---------------------
+ #.G # ## 
+  #   #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 44
+ExpectedUtility Of Move: -5
+---------------------
+ #. G#P## 
+  #   #   
+#G   #   #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 45
+ExpectedUtility Of Move: -5
+---------------------
+ #. G# ## 
+  #   #   
+# G  #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 46
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  # G #   
+#G   #   #
+  ### P   
+#....#   #
+Dots left: 5
 State Number: 47
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..G   
- .##..# #P
-G   ## # #
- #  ##    
-Dots left: 6
+ #.  # ## 
+  #G  #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
 State Number: 48
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.G   P
-G.##..# # 
-.   ## # #
- #  ##    
-Dots left: 6
+ #.  # ## 
+  #G  #   
+# G  #   #
+  ###     
+#....# P #
+Dots left: 5
 State Number: 49
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..G P 
- G##..# # 
-.   ## # #
- #  ##    
-Dots left: 6
+ #.  # ## 
+  # G #   
+#  G #   #
+  ###  P  
+#....#   #
+Dots left: 5
 State Number: 50
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-        P#
-## #.. G  
-G.##..# # 
-.   ## # #
- #  ##    
-Dots left: 6
+ #.  # ## 
+  #G  #   
+#   G#   #
+  ###   P 
+#....#   #
+Dots left: 5
 State Number: 51
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
- .##..# #G
-.   ## # #
- #  ##  P 
-Dots left: 6
+ #.G # ## 
+  #   #   
+#  G #   #
+  ###    P
+#....#   #
+Dots left: 5
 State Number: 52
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
-G.##..# # 
-.   ## # #
- #  ##   P
-Dots left: 6
+ #G  # ## 
+  #   #   
+#  G #   #
+P ###     
+#....#   #
+Dots left: 5
 State Number: 53
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
-G.##..# # 
-.   ## # #
- #  ##  P 
-Dots left: 6
+ #.G # ## 
+  #   #   
+# G  #   #
+ P###     
+#....#   #
+Dots left: 5
 State Number: 54
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
-G.##..# # 
-.   ## # #
- #  ##   P
-Dots left: 6
+ #.G # ## 
+  #   #   
+#G   #   #
+P ###     
+#....#   #
+Dots left: 5
 State Number: 55
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
- .##..# #G
-.   ## # #
- #  ##  P 
-Dots left: 6
+ #. G# ## 
+  #   #   
+#G   #   #
+  ###    P
+#....#   #
+Dots left: 5
 State Number: 56
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..   G
- .##..# # 
-.   ## # #
- #  ##   P
-Dots left: 6
+ #.G # ## 
+  #   #   
+# G  #   #
+P ###     
+#....#   #
+Dots left: 5
 State Number: 57
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..  G 
- .##..# # 
-.   ## # #
-P#  ## G  
-Dots left: 6
+ #.  # ## 
+  #   #   
+#G   #   #
+ P###     
+#..G.#   #
+Dots left: 5
 State Number: 58
-ExpectedUtility Of Move: -6
+ExpectedUtility Of Move: -5
 ---------------------
-       GG#
-## #..    
- .##..# # 
-P   ## # #
- #  ##    
+ #.  # ## 
+  #   #   
+#G   #   #
+P ###     
+#..G.#   #
 Dots left: 5
 State Number: 59
 ExpectedUtility Of Move: -5
 ---------------------
-      G  #
-## #..    
-P.##..# # 
-    ## # #
- #  ##    
+ #.  # ## 
+ G#   #   
+#    #   #
+  ###    P
+#..G.#   #
 Dots left: 5
 State Number: 60
 ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
- P##..# # 
-    ## # #
- #  ##G   
-Dots left: 4
+ #.G # ## 
+  #   #   
+#G   #   #
+P ###     
+#....#   #
+Dots left: 5
 State Number: 61
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
-  ##..# # 
- P  ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #G  #   
+#    #   #
+ G###    P
+#....#   #
+Dots left: 5
 State Number: 62
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
- P##..# # 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #G  #   
+#    #   #
+  ###   P 
+#G...#   #
+Dots left: 5
 State Number: 63
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
-  ##..# # 
- P  ## # #
- #  ##G   
-Dots left: 4
+ #.G # ## 
+  #   #   
+#    #   #
+  ###  P  
+#.G..#   #
+Dots left: 5
 State Number: 64
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-       G #
-## #..    
-  ##..# # 
-P   ## # #
- #  ##G   
-Dots left: 4
+ #. G# ## 
+  #   #   
+#    #   #
+  ### P   
+#.G..#   #
+Dots left: 5
 State Number: 65
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-P ##..# # 
-    ##G# #
- #  ## G  
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###P    
+#G..G#   #
+Dots left: 5
 State Number: 66
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
- P##..# # 
-    ##G# #
- #  ##G   
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ### P   
+#.G.G#   #
+Dots left: 5
 State Number: 67
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..# # 
- P  ##G# #
- #  ##G   
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###  P  
+#G..G#   #
+Dots left: 5
 State Number: 68
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-      G  #
-## #..    
-  ##..# # 
-P   ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G###   P 
+#..G.#   #
+Dots left: 5
 State Number: 69
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-     G   #
-## #..    
-P ##..# # 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ###     
+#..G.#  P#
+Dots left: 5
 State Number: 70
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-     G   #
-## #..    
-  ##..# #P
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###    G
+#...G# P #
+Dots left: 5
 State Number: 71
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-     G   #
-## #..   P
-  ##..# # 
-    ## # #
- #  ##G   
-Dots left: 4
+ #. G# ## 
+  #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 72
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G G  #
-## #..  P 
-  ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #. G#P## 
+  #   #   
+#    #   #
+  ###    G
+#....#   #
+Dots left: 5
 State Number: 73
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   G   G #
-## #..   P
-  ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###    G
+#...G#P  #
+Dots left: 5
 State Number: 74
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G    #
-## #.. G  
-  ##..# #P
-    ## # #
- #  ##    
-Dots left: 4
+ #. G# ## 
+  #   #   
+#    #   #
+G ###     
+#....# P #
+Dots left: 5
 State Number: 75
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #G. G  
-P ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.G # ## 
+  #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 76
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.G  G 
- P##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #. G#P## 
+  #   #   
+#    #   #
+  ###    G
+#....#   #
+Dots left: 5
 State Number: 77
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #G.  G 
-P ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #. G# ## 
+  #   #   
+#    #   #
+  ###    G
+#....#P  #
+Dots left: 5
 State Number: 78
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-        G#
-## #..    
- P##G.# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ### P G 
+#...G#   #
+Dots left: 5
 State Number: 79
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##.G# # 
- P  ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###    G
+#..G.#P  #
+Dots left: 5
 State Number: 80
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.G    
-  ##..# # 
-P   ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ### P   
+#...G#   #
+Dots left: 5
 State Number: 81
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-P ##.G# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ###P    
+#..G.#   #
+Dots left: 5
 State Number: 82
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##.G# # 
-P   ## # #
- #  ## G  
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ### P   
+#...G#   #
+Dots left: 5
 State Number: 83
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.G    
-P ##..# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G###P    
+#...G#   #
+Dots left: 5
 State Number: 84
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..G   
- P##..# # 
-    ## # #
- #  ## G  
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ### P   
+#G.G.#   #
+Dots left: 5
 State Number: 85
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-      GG #
-## #..    
-  ##..# # 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###     
+#.G..#P  #
+Dots left: 5
 State Number: 86
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-      G  #
-## #..    
-  ##..# # 
-  P ## # #
- #  ##G   
-Dots left: 4
+ #G  # ## 
+  #   #   
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
 State Number: 87
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..G   
-  ##..# # 
-    ##G# #
- #P ##    
-Dots left: 4
+ #G  # ## 
+  #   #   
+#    #   #
+  ###  P  
+#....#   #
+Dots left: 5
 State Number: 88
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
-  ##..# # 
-  P ## # #
- #  ##G   
-Dots left: 4
+ #G  # ## 
+  #   #   
+#    #   #
+  ###   P 
+#.G..#   #
+Dots left: 5
 State Number: 89
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..#G# 
-    ##G# #
- #P ##    
-Dots left: 4
+ #G  # ## 
+  #   #   
+#    #   #
+  ###     
+#..G.#  P#
+Dots left: 5
 State Number: 90
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  P      #
-## #..    
-  ##..#G# 
-    ##G# #
- #  ##    
-Dots left: 4
+ #G  # ## 
+  #   #   
+#    #   #
+  ###     
+#.G..# P #
+Dots left: 5
 State Number: 91
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
- P       #
-## #..    
-  ##..#G# 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.G # ## 
+  #   #   
+#    #   #
+  ###     
+#G...#  P#
+Dots left: 5
 State Number: 92
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-P        #
-## #.. G  
-  ##..# # 
-    ## # #
- #  ##G   
-Dots left: 4
+ #.  # ## 
+  #G  #   
+#    #   #
+ G###     
+#....# P #
+Dots left: 5
 State Number: 93
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
-  ##..# # 
-    ##G# #
-P#  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#  G #   #
+ G###     
+#....#P  #
+Dots left: 5
 State Number: 94
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..#G# 
-P   ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #G  #   
+#    #   #
+G ### P   
+#....#   #
+Dots left: 5
 State Number: 95
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
-  ##..# # 
- P  ## # #
- #  ##G   
-Dots left: 4
+ #.G # ## 
+  #   #   
+#    #P  #
+  ###    G
+#....#   #
+Dots left: 5
 State Number: 96
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..G   
-  ##..# # 
-  P ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ### P   
+#..G.#   #
+Dots left: 5
 State Number: 97
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-      G  #
-## #..    
-  ##..# # 
-    ##G# #
- #P ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #P  #
+G ###     
+#.G..#   #
+Dots left: 5
 State Number: 98
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  P  G   #
-## #..    
-  ##..# # 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    # P #
+  ###    G
+#G...#   #
+Dots left: 5
 State Number: 99
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   PG    #
-## #..    
-  ##..# # 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #P  
+#    #   #
+  ###    G
+#.G..#   #
+Dots left: 5
 State Number: 100
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-     G   #
-## #..    
-  ##..# # 
-    ## # #
- # P##G   
-Dots left: 4
+ #.  # ## 
+  #   # P 
+#    #   #
+  ###    G
+#.G..#   #
+Dots left: 5
 State Number: 101
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   P G   #
-## #..    
-  ##..# # 
-    ##G# #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #  P#
+G ###     
+#.G..#   #
+Dots left: 5
 State Number: 102
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G    #
-## #..    
-  ##..# # 
-    ##G# #
- # P##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    # P #
+ G###     
+#G...#   #
+Dots left: 5
 State Number: 103
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   G     #
-## #..    
-  ##..# # 
-   P## # #
- #  ##G   
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G###  P  
+#G...#   #
+Dots left: 5
 State Number: 104
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G G  #
-## #..    
-  ##..# # 
-  P ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+G ###     
+#G...# P #
+Dots left: 5
 State Number: 105
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   G  G  #
-## #..    
-  ##..# # 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+  ###    G
+#G...#P  #
+Dots left: 5
 State Number: 106
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G    #
-## #..G   
-  ##..# # 
-P   ## # #
- #  ##    
-Dots left: 4
+ #.  #P## 
+  #   #   
+#    #   #
+G ###     
+#G...#   #
+Dots left: 5
 State Number: 107
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G    #
-## #.. G  
-  ##..# # 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G###    G
+#....#P  #
+Dots left: 5
 State Number: 108
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #G.  G 
-  ##..# # 
-P   ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+GG### P   
+#....#   #
+Dots left: 5
 State Number: 109
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-        G#
-## #G.    
-  ##..# # 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #P  #
+G ###     
+#....#   #
+Dots left: 5
 State Number: 110
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..  G 
- P##G.# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G### P   
+#G...#   #
+Dots left: 5
 State Number: 111
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.. G  
-  ##G.# # 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
 State Number: 112
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##G.#G# 
-  P ## # #
- #  ##    
-Dots left: 4
+ #.  #P## 
+  #   #   
+#    #   #
+ G###     
+#....#   #
+Dots left: 5
 State Number: 113
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #G.    
-  ##..#G# 
- P  ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#G   #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 114
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #G.    
-  ##..#G# 
-P   ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#    #   #
+ G### P   
+#....#   #
+Dots left: 5
 State Number: 115
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-    G    #
-## #.. G  
-  ##..# # 
-    ## # #
-P#  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#G   #P  #
+  ###     
+#....#   #
+Dots left: 5
 State Number: 116
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-P        #
-## #G.  G 
-  ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+# G  # P #
+  ###     
+#G...#   #
+Dots left: 5
 State Number: 117
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
- P  G   G#
-## #..    
-  ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#  G #  P#
+  ###     
+#G...#   #
+Dots left: 5
 State Number: 118
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-P  G    G#
-## #..    
-  ##..# # 
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #G  #   
+#    #   #
+  ###   P 
+#.G..#   #
+Dots left: 5
 State Number: 119
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
- PG      #
-## #..    
-  ##..# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+#  G #   #
+  ###  P  
+#.G..#   #
+Dots left: 5
 State Number: 120
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-P        #
-##G#..    
-  ##..# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+  #   #   
+# G  # P #
+  ###     
+#G...#   #
+Dots left: 5
 State Number: 121
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  G      #
-## #..    
-  ##..# # 
-    ## #G#
-P#  ##    
-Dots left: 4
+ #.  # ## 
+  #   #   
+#G   #   #
+ G###  P  
+#....#   #
+Dots left: 5
 State Number: 122
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-##G#..    
-  ##..# # 
-P   ## #G#
- #  ##    
-Dots left: 4
+ #.  # ## 
+ G#   #   
+#    #   #
+G ### P   
+#....#   #
+Dots left: 5
 State Number: 123
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-##G#..    
-P ##..# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 124
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-##G#..    
-  ##..# #P
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+ G#   #   
+#    #   #
+ G###     
+#....# P #
+Dots left: 5
 State Number: 125
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  G      #
-## #..   P
-  ##..# # 
-    ## # #
- #  ##  G 
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 126
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..# #P
-    ## # #
- #G ##   G
-Dots left: 4
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###    G
+#....# P #
+Dots left: 5
 State Number: 127
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-P ##..# # 
-    ## # #
-G#G ##    
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
 State Number: 128
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..# #P
-    ## # #
-G# G##    
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+ G###     
+#....# P #
+Dots left: 5
 State Number: 129
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-   G     #
-## #..    
-P ##..# # 
-    ## # #
-G#  ##    
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+  ###  P  
+#G...#   #
+Dots left: 5
 State Number: 130
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..    
-  ##..# #P
-G   ## # #
- # G##    
-Dots left: 4
+ #.  # ## 
+  #   #  G
+#    # P #
+  ###     
+#G...#   #
+Dots left: 5
 State Number: 131
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..   P
-G ##..# # 
-    ## # #
- #G ##    
-Dots left: 4
+ #.  # ##G
+  #   #   
+#    #  P#
+  ###     
+#.G..#   #
+Dots left: 5
 State Number: 132
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..  P 
-  ##..# # 
-G G ## # #
- #  ##    
-Dots left: 4
+ #G  # ##G
+  #   #   
+#    #   #
+  ###   P 
+#....#   #
+Dots left: 5
 State Number: 133
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-        P#
-## #..    
-G ##..# # 
-   G## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###     
+#.G..#  P#
+Dots left: 5
 State Number: 134
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-       P #
-## #..    
-  ##..# #G
-   G## # #
- #  ##    
-Dots left: 4
+ #.  # ##G
+  #   #   
+#    #   #
+  ###     
+#.G..# P #
+Dots left: 5
 State Number: 135
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-        P#
-## #..    
-  ##..# #G
-    ## # #
- # G##    
-Dots left: 4
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###  P  
+#.G..#   #
+Dots left: 5
 State Number: 136
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..  PG
-  ##..# # 
-   G## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   # G 
+#    #   #
+  ### P   
+#.G..#   #
+Dots left: 5
 State Number: 137
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-        P#
-## #..  G 
-  ##..# # 
-  G ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###P    
+#G...#   #
+Dots left: 5
 State Number: 138
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-       P #
-## #..   G
-  ##..# # 
-    ## # #
- #G ##    
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+  ### P   
+#.G..#   #
+Dots left: 5
 State Number: 139
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  G   P  #
-## #..    
-  ##..# #G
-    ## # #
- #  ##    
-Dots left: 4
+ #.  # ## 
+G #   #   
+#    #   #
+  ###     
+#.G..#P  #
+Dots left: 5
 State Number: 140
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #..P   
-G ##..# # 
-    ## # #
- #G ##    
-Dots left: 4
+G#G  # ## 
+  #   #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
 State Number: 141
-ExpectedUtility Of Move: -4
+ExpectedUtility Of Move: -5
 ---------------------
-  G      #
-## #.P    
- G##..# # 
-    ## # #
- #  ##    
-Dots left: 3
+ #.  # ##G
+  #   #   
+#    #   #
+  ###     
+#.G..#P  #
+Dots left: 5
 State Number: 142
-ExpectedUtility Of Move: -3
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.     
-  ##.P# # 
- G  ## # #
- #G ##    
-Dots left: 2
+G#G  # ## 
+  #   #   
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
 State Number: 143
-ExpectedUtility Of Move: -2
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #.     
-  ##P # # 
-G   ## # #
- #G ##    
-Dots left: 1
+G#.G # ## 
+  #   #   
+#    #   #
+  ###     
+#....#P  #
+Dots left: 5
 State Number: 144
-ExpectedUtility Of Move: -1
+ExpectedUtility Of Move: -5
 ---------------------
-         #
-## #P     
-  ##  # # 
-G G ## # #
- #  ##    
-Dots left: 0
+ #.  # ## 
+G #G  #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
 State Number: 145
-ExpectedUtility Of Move: 0
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  # G #   
+#    #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 146
+ExpectedUtility Of Move: -5
+---------------------
+ #.  #P## 
+G # G #   
+#    #   #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 147
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #G  #  G
+#    #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 148
+ExpectedUtility Of Move: -5
+---------------------
+ #.G # ## 
+  #   #  G
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 149
+ExpectedUtility Of Move: -5
+---------------------
+ #G  # ## 
+G #   #   
+#    #P  #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 150
+ExpectedUtility Of Move: -5
+---------------------
+ #.G # ## 
+ G#   #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 151
+ExpectedUtility Of Move: -5
+---------------------
+ #G  # ## 
+G #   #   
+#    #P  #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 152
+ExpectedUtility Of Move: -5
+---------------------
+G#G  # ## 
+  #   #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 153
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+  ###     
+#.G..#P  #
+Dots left: 5
+State Number: 154
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###     
+#G...# P #
+Dots left: 5
+State Number: 155
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+ G###  P  
+#....#   #
+Dots left: 5
+State Number: 156
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #   #
+ G###     
+#....# P #
+Dots left: 5
+State Number: 157
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
+State Number: 158
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #   #
+G ### P   
+#....#   #
+Dots left: 5
+State Number: 159
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #P  #
+  ###    G
+#....#   #
+Dots left: 5
+State Number: 160
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #   #
+G ### P   
+#....#   #
+Dots left: 5
+State Number: 161
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #P  #
+ G###     
+#....#   #
+Dots left: 5
+State Number: 162
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+G ### P   
+#....#   #
+Dots left: 5
+State Number: 163
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #   #
+ G###P    
+#....#   #
+Dots left: 5
+State Number: 164
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#G   #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 165
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+ G#   #   
+#    #   #
+  ###  P  
+#....#   #
+Dots left: 5
+State Number: 166
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#G   #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 167
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 168
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #  G
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
+State Number: 169
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #  G
+#    #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 170
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 171
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+ G#   #   
+#    #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 172
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+G #   #   
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 173
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #  G
+#    #   #
+  ###P    
+#....#   #
+Dots left: 5
+State Number: 174
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   # G 
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 175
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #  G#
+  ###P    
+#....#   #
+Dots left: 5
+State Number: 176
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   # G 
+#    #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 177
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #P G#
+  ###     
+#....#   #
+Dots left: 5
+State Number: 178
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    # G #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 179
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #  G#
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 180
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #  G#
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 181
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#    #   #
+  ###P  G 
+#....#   #
+Dots left: 5
+State Number: 182
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #   #
+  ### P G 
+#....#   #
+Dots left: 5
+State Number: 183
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#    #  G#
+  ###     
+#....#P G#
+Dots left: 5
+State Number: 184
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #   #
+  ### P   
+#....#  G#
+Dots left: 5
+State Number: 185
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#    #  G#
+  ###P    
+#....#  G#
+Dots left: 5
+State Number: 186
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#    #  G#
+  ### P G 
+#....#   #
+Dots left: 5
+State Number: 187
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #   #
+  ###   G 
+#....#P  #
+Dots left: 5
+State Number: 188
+ExpectedUtility Of Move: -5
+---------------------
+ #.  #P## 
+  #   # G 
+#    #   #
+  ###  G  
+#....#   #
+Dots left: 5
+State Number: 189
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #   #
+  ###     
+#....#PG #
+Dots left: 5
+State Number: 190
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+  ### P   
+#....# G #
+Dots left: 5
+State Number: 191
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+  ###P    
+#....#  G#
+Dots left: 5
+State Number: 192
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #   #
+  ### P   
+#....#  G#
+Dots left: 5
+State Number: 193
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #   #
+  ###   G 
+#....#P  #
+Dots left: 5
+State Number: 194
+ExpectedUtility Of Move: -5
+---------------------
+ #.  #P## 
+G #   #   
+#    #   #
+  ###    G
+#....#   #
+Dots left: 5
+State Number: 195
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+G ###     
+#....#P  #
+Dots left: 5
+State Number: 196
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #   #
+ G### P   
+#....#   #
+Dots left: 5
+State Number: 197
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#    #   #
+  ###     
+#G...#P  #
+Dots left: 5
+State Number: 198
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#    #   #
+  ### P   
+#G...#   #
+Dots left: 5
+State Number: 199
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+ G###     
+#....#P  #
+Dots left: 5
+State Number: 200
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+ G###     
+#....# P #
+Dots left: 5
+State Number: 201
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 202
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #   
+#    #   #
+ G### P   
+#....#   #
+Dots left: 5
+State Number: 203
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #   
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 204
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+GG#   #   
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
+State Number: 205
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+  #   #   
+#G   #   #
+  ###     
+#....#  P#
+Dots left: 5
+State Number: 206
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+ G#   #   
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
+State Number: 207
+ExpectedUtility Of Move: -5
+---------------------
+G#.  # ## 
+G #   #   
+#    #   #
+  ###     
+#....#  P#
+Dots left: 5
+State Number: 208
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+ G#   #   
+#    #   #
+  ###     
+#....# P #
+Dots left: 5
+State Number: 209
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ##G
+  #   #   
+#G   #   #
+  ###  P  
+#....#   #
+Dots left: 5
+State Number: 210
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+# G  #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 211
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+# G  #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 212
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+# G  #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 213
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+# G  #P  #
+  ###     
+#....#   #
+Dots left: 5
+State Number: 214
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+# G  #   #
+  ### P   
+#....#   #
+Dots left: 5
+State Number: 215
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#G   #   #
+  ###     
+#....#P  #
+Dots left: 5
+State Number: 216
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#    #  G#
+ G###     
+#....# P #
+Dots left: 5
+State Number: 217
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   # G 
+#    #   #
+ G###  P  
+#....#   #
+Dots left: 5
+State Number: 218
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #  G
+#    #   #
+G ###     
+#....# P #
+Dots left: 5
+State Number: 219
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+  ###    G
+#....#P  #
+Dots left: 5
+State Number: 220
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+G #   #   
+#    #   #
+  ### P G 
+#....#   #
+Dots left: 5
+State Number: 221
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+ G#   #   
+#    #   #
+  ###  G  
+#....#P  #
+Dots left: 5
+State Number: 222
+ExpectedUtility Of Move: -5
+---------------------
+ #.  #P## 
+ G#   #   
+#    #   #
+  ###     
+#....# G #
+Dots left: 5
+State Number: 223
+ExpectedUtility Of Move: -5
+---------------------
+ #.  # ## 
+  #   #   
+#G   #   #
+  ###     
+#....#G  #
+Dots left: 5
+State Number: 224
+ExpectedUtility Of Move: -100340
 ---------------------
