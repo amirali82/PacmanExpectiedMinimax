@@ -145,6 +145,7 @@ def printMove(state):
     print("* ", state["PacmanPos"], file=open("pac.txt", 'a'))
     print("---------------------", file=open("pac.txt", 'a'))
 
+open('pac.txt', 'w').close()
 GameInfo = getInitialBoard(N, M, NUMBER_OF_GHOSTS, NUMBER_OF_WALLS)
 GameInfo = (GameInfo, expectedUtility(GameInfo))
 print(GameInfo[1])
