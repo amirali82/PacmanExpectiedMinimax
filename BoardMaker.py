@@ -39,7 +39,6 @@ def getInitialBoard(N, M, numberOfGhosts, numberOfWalls):
             for j in range(M):
                 if board[i][j] == characterMap["emptyBlock"]:
                     board[i][j] = characterMap["blockWithDot"]
-    print(board)
 
     mark = np.zeros((N, M), dtype=bool)
     mark[pacPos[0]][pacPos[1]] = True

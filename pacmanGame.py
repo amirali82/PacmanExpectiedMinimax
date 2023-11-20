@@ -169,15 +169,15 @@ def printMove(state):
         print(file=open("pac.txt", 'a'))
 
     #print(state["board"], file=open("pac.txt", 'a'))
-    print(state["numberOfDots"], state["age"], file=open("pac.txt", 'a'))
-    print(">> ", expectedUtility(state), file=open("pac.txt", 'a'))
-    print("* ", state["PacmanPos"], file=open("pac.txt", 'a'))
+    print("Dots left:", state["numberOfDots"], file=open("pac.txt", 'a'))
+    print("State Number:", state["age"] // 3, file=open("pac.txt", 'a'))
+    print("ExpectedUtility Of Move:", expectedUtility(state), file=open("pac.txt", 'a'))
     print("---------------------", file=open("pac.txt", 'a'))
 
 open('pac.txt', 'w').close()
 GameInfo = getInitialBoard(N, M, NUMBER_OF_GHOSTS, NUMBER_OF_WALLS)
 GameInfo = (GameInfo, expectedUtility(GameInfo))
-print(GameInfo[1])
+printMove(GameInfo[0])
 
 while isGameOver(GameInfo[0]) == False:
     #GameInfo = miniMax(GameInfo[0], (NUMBER_OF_GHOSTS + 1) * 3, -INF, INF, 0)
