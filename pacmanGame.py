@@ -1,0 +1,160 @@
+from BoardMaker import getInitialBoard
+from Parameters import characterMap, isSafe
+from random import randint, shuffle
+import copy
+import numpy as np
+
+# Parameters
+N = 5
+M = 10
+NUMBER_OF_WALLS = 15
+NUMBER_OF_GHOSTS = 2
+INF = 100340
+dx = [0, 0,  0,  1, -1]
+dy = [0, 1, -1,  0,  0]
+
+prev_numberOfDots = N * M - NUMBER_OF_WALLS - 1
+
+class moveSeq:
+    class move:
+        pass
+    seq = []
+
+def isPacmanAlive(state):
+    pacPos = state["PacmanPos"]
+
+    if state["board"][pacPos[0]][pacPos[1]] != characterMap["pacman"]:
+        return False
+    else:
+        return True
+
+def isGameOver(state):
+    return (state["numberOfDots"] == 0 or 
+            isPacmanAlive(state) == False)
+
+def expectedUtility(state):
+    if isPacmanAlive(state) == False:
+        return -INF
+    
+    pacPos = state["PacmanPos"]
+    eVal = -(state["numberOfDots"])
+    return eVal
+
+
+def nextStep(state, playerNumber):
+    res = []
+
+    if playerNumber == 0:
+        pacPos = state["PacmanPos"]
+        
+        for i in range(len(dx)):
+            x = (pacPos[0] + N + dx[i]) % N
+            y = (pacPos[1] + M + dy[i]) % M
+
+            if isSafe(state["board"], N, M, x, y):
+                newState = dict(copy.deepcopy(state)) # not so efficent
+
+                newState["board"][pacPos[0]][pacPos[1]] = characterMap["emptyBlock"]
+                if newState["board"][x][y] != characterMap["ghost"]:
+                    newState["board"][x][y] = characterMap["pacman"]
+                    
+                if state["mark"][x][y] == False:
+                    newState["numberOfDots"] = state["numberOfDots"] - 1
+                    newState["mark"][x][y] = True
+                
+                newState["board"][pacPos[0]][pacPos[1]] = characterMap["emptyBlock"]
+                newState["PacmanPos"] = (x, y)
+                newState["age"] = state["age"] + 1
+                # print(">> ", newState["numberOfDots"], state["numberOfDots"])
+                res.append(newState)
+    
+    else:
+        ghostPos = state["ghostPosesArray"][playerNumber - 1]
+
+        for i in range(len(dx)):
+            x = (ghostPos[0] + N + dx[i]) % N
+            y = (ghostPos[1] + M + dy[i]) % M
+
+            if isSafe(state["board"], N, M, x, y):
+                newState = dict(copy.deepcopy(state))
+
+                if state["mark"][ghostPos[0]][ghostPos[1]] == False:
+                    newState["board"][ghostPos[0]][ghostPos[1]] = characterMap["blockWithDot"]
+                else:
+                    newState["board"][ghostPos[0]][ghostPos[1]] = characterMap["emptyBlock"]
+                newState["board"][x][y] = characterMap["ghost"]
+
+                newState["ghostPosesArray"][playerNumber - 1] = (x, y)
+                newState["age"] = state["age"] + 1
+
+                res.append(newState)
+
+    shuffle(res)
+    return res
+
+def miniMax(state, depth, alpha, beta, playerNumber):
+    if depth == 0 or isGameOver(state) == True:
+        return (state, expectedUtility(state))
+    
+    if playerNumber == 0:
+        maxEval = -INF
+        bestState = copy.deepcopy(state)
+        for child in nextStep(state, playerNumber):
+            eval = miniMax(child, depth - 1, alpha, beta, (playerNumber + 1) % (NUMBER_OF_GHOSTS + 1))[1]
+            if maxEval < eval:
+                maxEval = eval
+                bestState = copy.deepcopy(child)
+            alpha = max(alpha, eval)
+            if beta <= alpha:
+                break
+
+        return (bestState, maxEval)
+
+    else:
+        minEval = INF
+        bestState = copy.deepcopy(state)
+        for child in nextStep(state, playerNumber):
+            eval = miniMax(child, depth - 1, alpha, beta, (playerNumber + 1) % (NUMBER_OF_GHOSTS + 1))[1]
+            if eval < minEval:
+                minEval = eval
+                bestState = copy.deepcopy(child)
+            beta = min(beta, eval)
+            if beta <= alpha:
+                break
+            
+        return (bestState, minEval)
+
+filter = {
+    0 : ' ',
+    1 : '.',
+    2 : 'P',
+    3 : 'G',
+    4 : '#',
+}
+
+def printMove(state):
+
+    for i in range(state['size']['N']):
+        for j in range(state['size']['M']):
+            print(filter[state["board"][i][j]], file=open("pac.txt", 'a'), end='')
+        print(file=open("pac.txt", 'a'))
+
+    #print(state["board"], file=open("pac.txt", 'a'))
+    print(state["numberOfDots"], state["age"], file=open("pac.txt", 'a'))
+    print(">> ", expectedUtility(state), file=open("pac.txt", 'a'))
+    print("* ", state["PacmanPos"], file=open("pac.txt", 'a'))
+    print("---------------------", file=open("pac.txt", 'a'))
+
+GameInfo = getInitialBoard(N, M, NUMBER_OF_GHOSTS, NUMBER_OF_WALLS)
+GameInfo = (GameInfo, expectedUtility(GameInfo))
+print(GameInfo[1])
+
+while isGameOver(GameInfo[0]) == False:
+    GameInfo = miniMax(GameInfo[0], (NUMBER_OF_GHOSTS + 1) * 3, -INF, INF, 0)
+
+    for i in range(NUMBER_OF_GHOSTS):
+        options = nextStep(GameInfo[0], i + 1)
+        newState = options[randint(0, len(options) - 1)]
+        GameInfo = (newState, expectedUtility(newState))
+
+    printMove(GameInfo[0])
