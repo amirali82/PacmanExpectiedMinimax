@@ -12,6 +12,7 @@ NUMBER_OF_GHOSTS = 2
 INF = 100340
 dx = [0, 0,  0,  1, -1]
 dy = [0, 1, -1,  0,  0]
+CHANCE = [0.12, 0.22, 0.22, 0.22, 0.22]
 
 prev_numberOfDots = N * M - NUMBER_OF_WALLS - 1
 
@@ -36,7 +37,6 @@ def expectedUtility(state):
     if isPacmanAlive(state) == False:
         return -INF
     
-    pacPos = state["PacmanPos"]
     eVal = -(state["numberOfDots"])
     return eVal
 
@@ -65,6 +65,8 @@ def nextStep(state, playerNumber):
                 newState["board"][pacPos[0]][pacPos[1]] = characterMap["emptyBlock"]
                 newState["PacmanPos"] = (x, y)
                 newState["age"] = state["age"] + 1
+                newState["lastMoveId"] = i
+
                 # print(">> ", newState["numberOfDots"], state["numberOfDots"])
                 res.append(newState)
     
@@ -86,11 +88,38 @@ def nextStep(state, playerNumber):
 
                 newState["ghostPosesArray"][playerNumber - 1] = (x, y)
                 newState["age"] = state["age"] + 1
+                newState["lastMoveId"] = i
 
                 res.append(newState)
 
     shuffle(res)
     return res
+
+def ExpectedMiniMax(state, depth, playerNumber):
+    if depth == 0 or isGameOver(state) == True:
+        return (state, expectedUtility(state))
+    
+    if playerNumber == 0:
+        maxEval = -INF
+        bestState = copy.deepcopy(state)
+        for child in nextStep(state, playerNumber):
+            eval = ExpectedMiniMax(child, depth - 1, (playerNumber + 1) % (NUMBER_OF_GHOSTS + 1))[1]
+            if maxEval < eval:
+                maxEval = eval
+                bestState = copy.deepcopy(child)
+
+        return (bestState, maxEval)
+
+    else:
+        minEval = INF
+        bestState = copy.deepcopy(state)
+        for child in nextStep(state, playerNumber):
+            expectedEval = CHANCE[child["lastMoveId"]] * ExpectedMiniMax(child, depth - 1, (playerNumber + 1) % (NUMBER_OF_GHOSTS + 1))[1]
+            if expectedEval < minEval:
+                minEval = expectedEval
+                bestState = copy.deepcopy(child)
+            
+        return (bestState, minEval)
 
 def miniMax(state, depth, alpha, beta, playerNumber):
     if depth == 0 or isGameOver(state) == True:
@@ -151,7 +180,8 @@ GameInfo = (GameInfo, expectedUtility(GameInfo))
 print(GameInfo[1])
 
 while isGameOver(GameInfo[0]) == False:
-    GameInfo = miniMax(GameInfo[0], (NUMBER_OF_GHOSTS + 1) * 3, -INF, INF, 0)
+    #GameInfo = miniMax(GameInfo[0], (NUMBER_OF_GHOSTS + 1) * 3, -INF, INF, 0)
+    GameInfo = ExpectedMiniMax(GameInfo[0], (NUMBER_OF_GHOSTS + 1) * 2, 0)
 
     for i in range(NUMBER_OF_GHOSTS):
         options = nextStep(GameInfo[0], i + 1)

@@ -51,6 +51,7 @@ def getInitialBoard(N, M, numberOfGhosts, numberOfWalls):
             "M": M
         },
         "PacmanPos": pacPos,
+        "lastMoveId": 0,
         "ghostPosesArray": ghostPoses,
         "numberOfDots": N * M - (numberOfWalls + 1),
         "mark": mark,
